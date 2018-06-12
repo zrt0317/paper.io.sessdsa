@@ -108,7 +108,7 @@ if __name__ == "__main__":
 
         # 组别
         try:
-            TEAM = sys.argv[1]
+            TEAM = 'AI'
         except:
             TEAM = 'test'
         LOG_FORMAT = TEAM + "/log/%s-%s(%d).zlog"
@@ -327,7 +327,7 @@ if __name__ == "__main__":
 
         # 3. 可视化
         visualize()
-        sleep(0.5)
+        sleep(5)
 
         # 4. 若运行完毕则跳出
         if not running_tasks:
